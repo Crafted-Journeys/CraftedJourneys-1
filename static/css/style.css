@@ -3160,7 +3160,22 @@ a:hover {
     }
 }
 
+/* Loader overlay styles */
+#page-loader {
+  position: fixed;
+  z-index: 9999;           /* Very high */
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(255,255,255,0.92);  /* slightly see-through, or use #fff */
+  display: flex; align-items: center; justify-content: center;
+  transition: opacity 0.4s;      /* Smooth fade-out */
+}
 
+#page-loader.hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
 /* From Uiverse.io by vinodjangid07 */ 
 .loader {
   width: fit-content;
