@@ -3336,7 +3336,6 @@ a:hover {
   position: absolute;
   padding-bottom: 15px;
   opacity: 0;
-  background-color: #222;
 }
 .masonry:nth-child(1) {
   animation: walk 2s linear infinite;
@@ -3394,6 +3393,66 @@ a:hover {
 }
 .masonry:nth-child(odd) .masonry-item:nth-child(even) {
   height: 20px;
+}
+.sky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+  background-color: #0d0b1f;
+}
+.star {
+  width: 1px;
+  height: 1px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 1px #ffdd48;
+  position: absolute;
+}
+.star-1 {
+  left: 50%;
+  top: 20%;
+}
+.star-2 {
+  left: 40%;
+  top: 30%;
+}
+.star-3 {
+  left: 16%;
+  top: 23%;
+}
+.star-4 {
+  left: 56%;
+  top: 44%;
+}
+.star-5 {
+  left: 72%;
+  top: 10%;
+}
+.star-6 {
+  left: 42%;
+  top: 8%;
+}
+.star-7 {
+  left: 18%;
+  top: 40%;
+}
+.star-8 {
+  left: 80%;
+  top: 50%;
+}
+.star-9 {
+  left: 90%;
+  top: 30%;
+}
+.ground {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(10, 31, 10);
+  height: 38%;
+  z-index: -1;
 }
 
 @keyframes walk {
